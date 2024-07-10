@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by XML-WS Runtime (https://github.com/eclipse-ee4j/metro-jax-ws). Runtime's version is Eclipse Metro/4.0.3 (RELEASE-4.0.3-4f96cb2; 2023-10-20T06:38:17+0000) XMLWS-Impl/4.0.2 XMLWS-API/4.0.1 XMLB-Impl/4.0.4 XMLB-API/4.0.1 git-revision#4f96cb2. --><xs:schema xmlns:tns="http://editura.aosd.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://editura.aosd.com/">
+
+<xs:element name="add" type="tns:add"/>
+
+<xs:element name="addResponse" type="tns:addResponse"/>
+
+<xs:complexType name="add">
+<xs:sequence>
+<xs:element name="autor" type="xs:string" minOccurs="0"/>
+<xs:element name="titlu" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
